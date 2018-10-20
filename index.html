@@ -19,24 +19,50 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:400,700" rel="stylesheet">
 </head>
 <body>
-<!--Nav-->
-<div class="side-nav">
-    
-</div>
+   <!--Nav-->
+   <div class="side-nav" id="side">
+        <button id="close-btn">X</button> 
+    </div>
 <!-- Main Container-->
-<div class="container">
+<div class="container-fluid main" id="main">
+ 
     <div class="row text-center">
         <div class="col-xl-12">
-            <h3 class="main-title">Hi, I'm Bobby.</h3>
-            <p class="small-text">I'm a Web Developer.</p>
+            <h3 class="main-title" id="main-title">Hi, I'm Bobby.</h3>
+            <p class="small-text" id="small-text">I'm a Web Developer.</p>
             <hr class="hr-main">
             <button class="btn btn-primary">My Projects</button>
-            <button class="btn btn-primary">About Me</button>
+            <button class="btn btn-primary" id="about-btn">About Me</button>
         </div>
     </div>
 
 </div>
 <!--End Container-->
+
+
+<!-- About Me Slide Out -->
+<div class="contianer about-me" id="about">
+    <h3>About Me</h3>
+
+    <p>Hi! My name is Robert Boyd, but you can call me Bobby. I am an aspiring full stack web developer. I have a degree
+        in Mass Communications from California State University, Sacramento. However, I have always been fascinated
+        by web development ever since my highschool web class. Because of this fascination, I decided to embark on
+        my web development journey.
+    </p>
+    <p id="secondP">My web development journey started when I got a job in IT. At my new IT job, well, I wasn't actually doing much
+        work. Business was slow, and I was bored. So, I decided to remake their website, and from then on I knew
+        that's what I wanted to do.
+        <br> I remade their website first using Wordpress, however when that was done I decided that I wanted more.
+    </p>
+    <p>
+        After I finished the new Wordpress website, I decided that I wanted to learn React. Not knowing how big of a step that was
+        going to be, I watched Youtube video after Youtube video until I remade their website again. My new found
+        fascination for React led me to enroll in a coding bootcamp. At the bootcamp I am ready to hone my coding
+        skills and prepare myself for a web development career.
+    </p>
+</div>
+
 <!--Footer-->
 </body>
+<script src="./assets/scripts/main.js"></script>
 </html>
