@@ -5,7 +5,7 @@ $(document).ready(function () {
   if ($(window).width() > 1200 || clicked === false) {
 
     $('.tilt-div').tilt({
-      maxTilt: 1,
+      maxTilt: 2,
       glare: true,
       maxGlare: .3
     })
@@ -79,6 +79,7 @@ $(document).on('click', '#back-to-home', function () {
   })
 })
 
+
 $(document).on('click', '#github-icon', function () {
   window.location.href = "https://www.github.com/robaboyd";
 })
@@ -90,7 +91,7 @@ $(document).on('click', '#linkedin-icon', function () {
 $(document).on('click', '.project-links', function () {
   clicked = true;
   $('.project-info').css({
-    "top": '0',
+    "right": '0',
     "width": '100%',
     "height": '100vh',
     "position": 'absolute',
@@ -170,7 +171,7 @@ $(document).on('click', '.project-links', function () {
 
 })
 
-$(document).on('click', '.close-btn', function () {
+$(document).on('click', '#back-to-home-2', function () {
   clicked = false;
   $('.project-links').css({
     "display": "block"
@@ -181,7 +182,7 @@ $(document).on('click', '.close-btn', function () {
     "height": "100vh",
     "position": "absolute",
     "z-index": "5",
-    "top": "100%",
+    "right": "200%",
     "transition": "all .5s ease"
   });
   $('#tsf-image').css({

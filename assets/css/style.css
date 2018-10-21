@@ -157,7 +157,8 @@ a {
   height: 100vh;
   position: absolute;
   z-index: 5;
-  top: 200%;
+  right: 200%;
+  top: 0;
   transition: all .5s ease;
 }
 
@@ -230,6 +231,20 @@ a {
 }
 
 #back-to-home:hover {
+  color: #528EC2;
+  text-decoration: line-through;
+}
+
+#back-to-home-2 {
+  font-family: 'Roboto Mono', sans-serif;
+  margin: 100px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all .5s ease;
+
+}
+
+#back-to-home-2:hover {
   color: #528EC2;
   text-decoration: line-through;
 }
