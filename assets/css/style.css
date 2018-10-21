@@ -1,86 +1,186 @@
-/* Tags */
+/* tags */
 body {
   height: 100vh;
-
-}
-
-/* Bootstrap Edits */
-.btn-primary {
-  background-color: #395056 !important;
-  border: none;
-  border-radius: 0;
-  margin: 20px;
-}
-
-/* index page */
-.main{
-  height: 100vh;
   overflow: hidden;
-  background: url('../images/mountain.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all .5s ease;
-  margin: 0px;
-}
-
-.side-nav {
-  position: fixed;
-  height: 100vh;
-  width: 50px;
-  background-color: #313131;
-  left: 0;
-  z-index: 5;
+  background-color: #EBEBEB;
   transition: all .5s ease;
 }
 
-.main-title {
+ul li {
+  list-style-type: none;
+
+}
+
+a {
+  color: white;
+}
+
+/* nav */
+.main-nav {
+  margin-top: 80px;
+}
+
+.nav-text {
+  display: inline;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
-  font-size: 100px;
   font-weight: 700;
-  margin-top: 15%;
+  letter-spacing: 3px;
+}
+
+.logo {
+  display: inline;
+  padding: 5px;
+  width: 49px;
+  height: 49px;
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transition: all .5s ease;
+  cursor: pointer;
 }
 
-.small-text {
-  font-family: 'Roboto Mono', sans-serif;
-  font-size: 30px;
-  color: #ffffff;
-  transition: all .5s ease;
+.logo:hover {
+  background-color: #528EC2;
 }
 
-.hr-main {
-  border: 1px solid #639491;
-  width: 100px;
+/* left column */
+
+.tilt-div {
+  transform-style: preserve-3d;
 }
 
-#close-btn{
-  background-color: #313131;
-  border: none;
-  color: #ffffff;
-  margin: 0 auto;
-  position: relative;
-  padding: 20px;
-}
-
-/* About Me */
-.about-me{
-  background-color:#639491;
-  position: absolute;
-  z-index: 4;
-  width: 50%;
+#left-col {
+  background-image: url(../images/B.png);
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
-  top: 0;
-  left: -50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#right-col {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+
+}
+
+.header-text {
+  font-size: 80px;
+  letter-spacing: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  transform: translateZ(20px);
+}
+
+.secondary-text {
+  justify-content: flex-end;
+  display: flex;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 25px;
+  color: #528EC2;
+  transform: translateZ(20px);
+}
+
+#projects-list {
+  position: relative;
+  z-index: 2;
+  transform: translateZ(20px);
+}
+
+#projects-header {
+  margin-bottom: 30px;
+}
+
+.project-links {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-decoration: none;
   transition: all .5s ease;
 }
 
-/* Media Queries */
+.project-links:hover {
+  cursor: pointer;
+  color: #528EC2;
+  text-decoration: line-through;
+  margin-bottom: 30px;
+}
+
+.project-images {
+  position: absolute;
+  /* z-index: 1; */
+  width: 40%;
+  height: 100%;
+  left: 5%;
+  top: 30%;
+  height: auto;
+  opacity: 0;
+  transition: all .5s ease;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transform: translateZ(20px);
+  border: 3px solid white;
+}
+
+/* project info */
+
+.project-info {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  transition: all .5s ease;
+}
+
+.info-div {
+  position: relative;
+  top: 64%;
+}
+
+.link-btn {
+  background-color: #528EC2;
+  /* padding: 17px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* about me */
+.about-me {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  transition: all .5s ease;
+}
+
+#about-link {
+  cursor: pointer;
+}
+
+#about-link:hover {
+  color: #528EC2;
+}
+
+#profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 @media only screen and (max-width: 1200px) {
-  .main-title{
-    font-size: 70px !important;
-  }
-  .small-text{
-    font-size: 20px;
+  body {
+    overflow: auto;
   }
 }

@@ -1,68 +1,106 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:400,700" rel="stylesheet">
 </head>
+
 <body>
-   <!--Nav-->
-   <div class="side-nav" id="side">
-        <button id="close-btn">X</button> 
-    </div>
-<!-- Main Container-->
-<div class="container-fluid main" id="main">
- 
-    <div class="row text-center">
-        <div class="col-xl-12">
-            <h3 class="main-title" id="main-title">Hi, I'm Bobby.</h3>
-            <p class="small-text" id="small-text">I'm a Web Developer.</p>
-            <hr class="hr-main">
-            <button class="btn btn-primary">My Projects</button>
-            <button class="btn btn-primary" id="about-btn">About Me</button>
+    <div>
+
+        <!--Nav-->
+        <div class="container-fluid text-center main-nav">
+            <p class="nav-text" id='about-link'>about me</p>
+            <p class="logo">BB</p>
+            <p class="nav-text">bboyd2008@gmail.com</p>
         </div>
+
+        <!-- Main Container-->
+        <div class="container-fluid main tilt-div">
+            <div class="row">
+                <div class="col-xl-6" id="left-col">
+                    <div>
+                        <h3 class="header-text">BOBBY BOYD</h3>
+                        <p class="secondary-text">Web Developer</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-6" id="right-col">
+
+                    <ul id='projects-list'>
+                        <li id="projects-header">
+                            <p class='nav-text'>projects</p>
+                            <hr>
+                        </li>
+                        <li>
+                            <p class="project-links" id="tsf-link" data-github="" data-live="" data->THE SECRET FILES</p>
+                        </li>
+                        <li>
+                            <p class="project-links" id="sw-link">STAR WARS GAME</p>
+                        </li>
+                        <li>
+                            <p class="project-links" id="got-link">GAME OF THRONES TRIVIA</p>
+                        </li>
+                        <li>
+                            <p class="project-links" id="wgg-link">Word Guess Game</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <img class="project-images" id="tsf-image" src="tsf.PNG" alt="">
+            <img class="project-images" id="sw-image" src="starwars.PNG" alt="">
+            <img class="project-images" id="got-image" src="Trivia.PNG" alt="">
+            <img class="project-images" id="wgg-image" src="wgg.PNG" alt="">
+            <div class="project-info text-center">
+                <button class="close-btn">X</button>
+                <div class="info-div">
+
+                    <p id="description">Description goes here</p>
+                    <a class="link-btn" id="project-github" href="" target="_blank">Github</a>
+                    <a class="link-btn" href="" id="live-link" target="_blank">Live</a>
+
+                </div>
+            </div>
+        </div>
+        <!--End Container-->
+
+        <!-- about me -->
+        <div class="about-me">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <img id="profile-img" src="./assets/images/me1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!--Footer-->
     </div>
-
-</div>
-<!--End Container-->
-
-
-<!-- About Me Slide Out -->
-<div class="contianer about-me" id="about">
-    <h3>About Me</h3>
-
-    <p>Hi! My name is Robert Boyd, but you can call me Bobby. I am an aspiring full stack web developer. I have a degree
-        in Mass Communications from California State University, Sacramento. However, I have always been fascinated
-        by web development ever since my highschool web class. Because of this fascination, I decided to embark on
-        my web development journey.
-    </p>
-    <p id="secondP">My web development journey started when I got a job in IT. At my new IT job, well, I wasn't actually doing much
-        work. Business was slow, and I was bored. So, I decided to remake their website, and from then on I knew
-        that's what I wanted to do.
-        <br> I remade their website first using Wordpress, however when that was done I decided that I wanted more.
-    </p>
-    <p>
-        After I finished the new Wordpress website, I decided that I wanted to learn React. Not knowing how big of a step that was
-        going to be, I watched Youtube video after Youtube video until I remade their website again. My new found
-        fascination for React led me to enroll in a coding bootcamp. At the bootcamp I am ready to hone my coding
-        skills and prepare myself for a web development career.
-    </p>
-</div>
-
-<!--Footer-->
+    <script src="./assets/scripts/tilt.js"></script>
 </body>
 <script src="./assets/scripts/main.js"></script>
+
 </html>
