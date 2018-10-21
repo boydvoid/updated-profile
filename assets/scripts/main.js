@@ -2,7 +2,7 @@ let clicked;
 
 $(document).ready(function () {
   clicked = false;
-  if ($(window).width() > 1200) {
+  if ($(window).width() > 1200 || clicked === false) {
 
     $('.tilt-div').tilt({
       maxTilt: 1,
@@ -71,6 +71,20 @@ $(document).on('click', '#about-link', function () {
   $('.about-me').css({
     "left": "0"
   })
+})
+
+$(document).on('click', '#back-to-home', function () {
+  $('.about-me').css({
+    "left": "-100%"
+  })
+})
+
+$(document).on('click', '#github-icon', function () {
+  window.location.href = "https://www.github.com/robaboyd";
+})
+
+$(document).on('click', '#linkedin-icon', function () {
+  window.location.href = "https://www.linkedin.com/in/robert-boyd-99bb0664/";
 })
 
 $(document).on('click', '.project-links', function () {
