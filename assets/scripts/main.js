@@ -117,7 +117,7 @@ $(document).on('click', '.project-links', function () {
 
     $("#project-github").attr("href", "https://github.com/robaboyd/theSecretFiles");
 
-    $("#live-link").attr("href", "https://robaboyd.github.io/theSecretFiles/index.html");
+    $("#live-link").attr("href", "https://speakit-done.herokuapp.com");
   }
 
   if (this.id === 'got-link') {
