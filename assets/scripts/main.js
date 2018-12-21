@@ -112,7 +112,7 @@ $(document).on('click', '.project-links', function () {
       top: '10%',
       left: '25%',
     });
-    $('#description').text('Search any Marvel Comic Book character to see their comics, the events they are in, and the Actor who has portrayed them.');
+    $('#description').text('A reddit clone built using node, express, and mysql.');
 
     $('#project-github').attr('href', 'https://github.com/robaboyd/speakit');
 
